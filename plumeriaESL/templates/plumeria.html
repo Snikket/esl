@@ -88,7 +88,11 @@
                         	<div class="form-top">
                         		<div class="form-top-left">
                         			<h3>Contact us</h3>
+                        			{% if emailed %}
+                        			<p><strong> Thank you! We will be in touch soon!</strong></p>
+                        			{% else %}
                             		<p>Get a free trial lesson today</p>
+                            		{% endif %}
                         		</div>
                         		<div class="form-top-right">
                         			<span aria-hidden="true" class="typcn typcn-pencil"></span>
@@ -427,6 +431,7 @@
         		</div>
         	</div>
         </div>
+
 
 
         <!-- Javascript -->
