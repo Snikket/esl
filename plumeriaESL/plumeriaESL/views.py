@@ -15,8 +15,10 @@ def signup(request):
   if request.method == 'POST':
     first_name = request.POST['form-first-name']
     last_name = request.POST['form-last-name']
-    email = request.POST.get('form-email')
+
     message = request.POST.get('form-message')
+    email = request.POST.get('form_email')
+    print str(email)
     send_mail('Student Query from Plumeria', "First Name:"+
       		first_name+"\nLast Name:"+
        		last_name+"\nEmail:"+
