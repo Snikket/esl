@@ -21,5 +21,5 @@ def signup(request):
       		first_name+"\nLast Name:"+
        		last_name+"\nEmail:"+
        		str(email)+"\nMessage:"+
-       		str(message), str(email),['mamas.nicolaou@outlook.com'], fail_silently=False)
+       		str(message), str(email),['erato.nicolaou@outlook.com'], fail_silently=False)
     return render_to_response('plumeria.html', {'emailed':True}, context)
