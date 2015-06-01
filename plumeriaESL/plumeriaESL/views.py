@@ -17,10 +17,9 @@ def signup(request):
     last_name = request.POST['form-last-name']
     email = request.POST.get('form-email')
     message = request.POST.get('form-message')
-    print send_mail('Student Query from Plumeria', "First Name:"+
+    send_mail('Student Query from Plumeria', "First Name:"+
       		first_name+"\nLast Name:"+
        		last_name+"\nEmail:"+
        		str(email)+"\nMessage:"+
-       		str(message), str(email),
-    ['mamas.nicolaou@outlook.com'], fail_silently=False)
+       		str(message), str(email),['mamas.nicolaou@outlook.com'], fail_silently=False)
     return render_to_response('plumeria.html', {'emailed':True}, context)
