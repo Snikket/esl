@@ -19,6 +19,6 @@ import views
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^plumeria', views.plumeria, name='plumeria'),
+    url(r'^$', views.plumeria, name='plumeria'),
     url(r'^signup', views.signup, name='signup'),
 ]
